@@ -1,5 +1,5 @@
 {
-  "name": "aws_s3_image_upload",
+  "name": "awss3_image_upload",
   "version": "1.0.0",
   "description": "image and document upload",
   "main": "index.js",
