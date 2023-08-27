@@ -1,4 +1,4 @@
-# AWS_S3_image_upload
+# aws-s3-file-upload
 
 This package allows you to easily upload images and files to Amazon S3 storage and obtain the corresponding links for the uploaded content.
 
@@ -10,7 +10,7 @@ This package provides functions to simplify the process of uploading images and 
 
 You can install this package using npm:
 
-``npm install AWS_S3_image_upload``
+``npm install aws-s3-file-upload``
 
 Usage
 
@@ -19,7 +19,7 @@ Uploading Images and Files
 To upload images to AWS S3, you can use the awsS3FormDataUpload function. Here's an example of how to use it:
 
 ````
-const imageUpload = require('AWS_S3_image_upload');
+const imageUpload = require('aws-s3-file-upload');
 
 const data = {
     accesskey: 'your_access_key',
@@ -37,7 +37,7 @@ Uploading Base64-Encoded Files
 For AWS S3, you can also upload base64-encoded strings using the awsS3Base64Upload function. Here's an example:
 
 ````
-const imageUpload = require('AWS_S3_image_upload');
+const imageUpload = require('aws-s3-file-upload');
 
 const data = {
     accesskey: 'your_access_key',
@@ -57,7 +57,7 @@ Deleting Uploaded Files
 You can also delete uploaded files using the deleteS3File function. Here's an example:
 
 ````
-const imageUpload = require('AWS_S3_image_upload');
+const imageUpload = require('aws-s3-file-upload');
 
 const response = imageUpload.deleteS3File('your_access_key', 'your_secret_key', 'your_bucket_name/your_bucket_folder_name', 'https://your_s3_link/file_key');
 
