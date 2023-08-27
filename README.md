@@ -19,7 +19,7 @@ Uploading Images and Files
 To upload images to AWS S3, you can use the awsS3FormDataUpload function. Here's an example of how to use it:
 
 ````
-import imageUpload from 'aws_s3_image_upload';
+const imageUpload = require('aws_s3_image_upload');
 
 const data = {
     accesskey: 'your_access_key',
@@ -37,7 +37,7 @@ Uploading Base64-Encoded Files
 For AWS S3, you can also upload base64-encoded strings using the awsS3Base64Upload function. Here's an example:
 
 ````
-import imageUpload from 'aws_s3_image_upload';
+const imageUpload = require('aws_s3_image_upload');
 
 const data = {
     accesskey: 'your_access_key',
@@ -57,7 +57,7 @@ Deleting Uploaded Files
 You can also delete uploaded files using the deleteS3File function. Here's an example:
 
 ````
-import imageUpload from 'aws_s3_image_upload';
+const imageUpload = require('aws_s3_image_upload');
 
 const response = imageUpload.deleteS3File('your_access_key', 'your_secret_key', 'your_bucket_name/your_bucket_folder_name', 'https://your_s3_link/file_key');
 

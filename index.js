@@ -1,8 +1,6 @@
-import imageUpload  from './utils/aws_s3_upload'
+const imageUpload = require('./utils/aws_s3_upload')
 
-
-
-export default imageUpload
+module.exports = imageUpload
 
 
 

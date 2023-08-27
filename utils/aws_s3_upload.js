@@ -1,5 +1,5 @@
-import { v4 as uuidv4 } from "uuid"
-import AWS from 'aws-sdk'
+const { v4: uuidv4 } = require("uuid")
+const AWS = require('aws-sdk')
 
 
 const awsS3FormDataUpload = async (aws_access_key, aws_secret_key, bucket, images) => {
@@ -75,7 +75,7 @@ const awsS3Base64Upload = async (aws_access_key, aws_secret_key, bucket, base64S
                     return null;
                 }
             } else if (contentType === 'video') {
-                if(contentFormat === 'mp4') {
+                if (contentFormat === 'mp4') {
                     return 'video/mp4'
                 } else {
                     return null;
@@ -152,4 +152,4 @@ const awsS3DeleteUplodedFile = async (aws_access_key, aws_secret_key, bucket, li
     }
 };
 
-export default {awsS3FormDataUpload, awsS3Base64Upload, awsS3DeleteUplodedFile}
+export default { awsS3FormDataUpload, awsS3Base64Upload, awsS3DeleteUplodedFile }
