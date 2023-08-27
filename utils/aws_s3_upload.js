@@ -152,4 +152,4 @@ const awsS3DeleteUplodedFile = async (aws_access_key, aws_secret_key, bucket, li
     }
 };
 
-export default { awsS3FormDataUpload, awsS3Base64Upload, awsS3DeleteUplodedFile }
+module.exports = { awsS3FormDataUpload, awsS3Base64Upload, awsS3DeleteUplodedFile }
